@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ارسال سوال</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- دکمه برگشت -->
+    <button class="back-button" onclick="window.history.back();">← برگشت</button>
+
+    <div class="container">
+        <h1>ارسال سوال</h1>
+
+        <!-- دکمه خروج -->
+        <button class="logout-button" id="logout-button">خروج از حساب</button>
+
+        <!-- فرم ارسال سوال -->
+        <form id="question-form">
+            <label for="name">نام:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="title">عنوان سوال:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="topic">موضوع:</label>
+            <input type="text" id="topic" name="topic" required>
+
+            <label for="description">توضیحات:</label>
+            <textarea id="description" name="description" required></textarea>
+
+            <label for="image">تصویر (اختیاری):</label>
+            <input type="file" id="image" name="image">
+
+            <button type="submit">ارسال سوال</button>
+        </form>
+    </div>
+
+    <script src="js/student.js"></script>
+    <script src="js/logout.js"></script>
+</body>
+</html>

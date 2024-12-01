@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورود به سایت</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ورود به حساب</h1>
+        <form id="login-form">
+            <label for="username">نام کاربری:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">کلمه عبور:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">ورود</button>
+        </form>
+        <p id="error-message" class="error">نام کاربری یا کلمه عبور اشتباه است</p>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>
